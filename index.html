@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Váy Louis Vuitton</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="page">
+    <!-- Header nho nhỏ -->
+    <header class="topbar">
+      <h1>ICHIGO SHOP</h1>
+      <p class="desc">Thanh lịch trong từng chi tiết</p>
+    </header>
+
+    <!-- Thẻ sản phẩm chính -->
+    <main class="product-card">
+
+      <!-- Slider -->
+      <div class="slider">
+
+
+        <button class="nav prev" aria-label="Ảnh trước">❮</button>
+        <button class="nav next" aria-label="Ảnh sau">❯</button>
+
+        <div class="slides">
+          <img class="active" src="./z6933687621757_e48cb9ac4c5da406189946a23ddd0980.jpg" alt="Giỏ Chio Kèm Ví Nhỏ - 1"/>
+          <img src="./z6933687614265_35a66b6c9aa74cdd23ca2e5ed75b470f.jpg" alt="Giỏ Chio Kèm Ví Nhỏ - 2"/>
+        </div>
+
+        <div class="dots" role="tablist" aria-label="Chọn ảnh">
+          <button class="dot active" data-index="0" aria-label="Ảnh 1"></button>
+          <button class="dot" data-index="1" aria-label="Ảnh 2"></button>
+        </div>
+      </div>
+
+      <!-- Chi tiết + mua -->
+      <section class="info">
+        <div class="title-row">
+          <h2>Váy Louis Vuitton Pastel Ombre</h2>
+        </div>
+
+
+
+        <div class="price-row">
+          <span class="price-old">2.380.000</span>
+          <span class="price-new" data-unit="1190000">1.190.000đ</span>
+          <span class="discount">-50%</span>
+          <span class="vat">Giá đã bao gồm VAT - Ưu đãi nhân dịp 2/9</span>
+        </div>
+
+        <div class="qty-row" aria-label="Chọn số lượng">
+          <button type="button" class="qty-btn" data-action="dec" aria-label="Giảm">−</button>
+          <input id="quantity" class="qty-input" type="number" value="1" min="1" inputmode="numeric" />
+          <button type="button" class="qty-btn" data-action="inc" aria-label="Tăng">+</button>
+        </div>
+
+        <div class="benefits">
+          <span class="benefit"><span class="i">🚚</span> Giao nhanh 24–72h</span>
+          <a class="benefit link" href="https://zalo.me/g/wpalxt783" target="_blank" rel="noopener"><span class="i">💬</span> Zalo</a>
+          <span class="benefit"><span class="i">🔁</span> Đổi size miễn phí</span>
+          <span class="benefit"><span class="i">📱 </span> 0896223162</span>
+
+        </div>
+
+        <form id="orderForm" class="order-card" novalidate>
+          <h3>Thông tin đặt hàng</h3>
+
+          <label for="phone">Số điện thoại *</label>
+          <input id="phone" name="phone" type="tel">
+          <span class="error" id="phoneError"></span>
+
+          <label for="address">Địa chỉ *</label>
+          <textarea id="address"></textarea>
+          <span class="error" id="addressError"></span>
+
+
+          <label for="note">Ghi chú *</label>
+          <textarea id="note"></textarea>
+          <span class="error" id="noteError"></span>
+
+          <button type="submit" class="btn primary block">Đặt hàng</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Thanh dính đáy -->
+    <div class="sticky-bar">
+      <!-- <div class="sticky-price">
+        <span class="price-old"></span>
+        <span class="price-new" data-unit="420000"></span>
+        <span class="discount"></span>
+      </div>-->
+      <button class="btn buy-now" id="buyNow">
+        🛍️ Mua ngay giảm 50% 
+      </button>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025 Shop Online. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
